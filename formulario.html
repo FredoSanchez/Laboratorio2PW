@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Formulario</title>
+</head>
+<body>
+    <header><h1 align = "center">Curriculum vitae</h1></header>
+    <section>
+        <article>
+            <div>
+                <fieldset>
+                    <legend>Personal data</legend>
+                    <form action="formulario.html"  method = "POST"></form>
+                    <label for="dui">DUI: </label>
+                    <input type="text" name ="dui" placeholder= "0123456789">
+
+                    <label for="firstName">First Name: </label>
+                    <input type="text" name="firstName" placeholder= "First Name">
+
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" name = "lastName" placeholder= "Last Name">
+
+                    <label for="Gender">Gender: </label>
+                    <input type="radio">M
+                    <input type="radio">F
+                    <br><br>
+
+                    <label for="contactNumber">Contact Number: </label>
+                    <input type="text" name = "contactNumber">
+
+                    <label for="BirthDate">BirthDate: </label>
+                    <input type="date" name = "BirthDate" value = "25-05-1999">
+
+                    <label for="CivilStatus">Civil Status: </label>
+                    <select name="CivilStatus" id="select1">
+                        <option value="s">Single</option>
+                        <option value="m">Married</option>
+                        <option value="d">Divorced</option>
+                    </select>
+
+                    <label for="image">Image</label>
+                    <input type="file">
+                </fieldset>
+            </div>
+        </article>
+
+        <br>
+
+        <article>
+            <div>
+                <fieldset>
+                    <legend>Work Experience</legend>
+                    <form action="formulario.html">
+                        <textarea name="Experience" id="exp" cols="220" rows="10">Work experience</textarea>
+                    </form>
+                </fieldset>
+            </div>
+        </article>
+
+        <br>
+
+        <article>
+            <div>
+                <fieldset>
+                    <legend>Academic Training</legend>
+                    <form action="formulario.html">
+                            <textarea name="Training" id="train" cols="220" rows="10">Academic Training</textarea>
+                        </form>
+                </fieldset>
+            </div>
+        </article>
+
+        <br>
+
+        <article>
+            <div>
+                <fieldset>
+                    <legend>Further Training</legend>
+                    <div>
+                        <fieldset>
+                            <legend>Programming Languages</legend>
+                                <input type="checkbox" name="check[]" > Java
+                                <input type="checkbox" name="check[]" > C#
+                                <input type="checkbox" name="check[]" > Python
+                                <input type="checkbox" name="check[]" > C++
+                                <input type="checkbox" name="check[]" > Ruby
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div>
+                            <fieldset>
+                                <legend>Web Technologies</legend>
+                                    <input type="checkbox" name="check[]" > HTML5
+                                    <input type="checkbox" name="check[]" > CSS/CSS3
+                                    <input type="checkbox" name="check[]" > materialize Css 
+                                    <input type="checkbox" name="check[]" > JavaScript 
+                                    <input type="checkbox" name="check[]" > Node.js
+                                    <input type="checkbox" name="check[]" > Spring MVC
+                            </fieldset>
+                        </div>
+                </fieldset>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
